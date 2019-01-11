@@ -1,6 +1,7 @@
 /* fixed navabar */
 .navbar {
 height: 95px;
+padding: 0;
 }
  
 .bg-custom { 
@@ -13,7 +14,7 @@ height: 95px;
 }
 
 .jumbotron-fluid {
-   height: 500px;
+   height: 485px;
    margin-top: 95px;
    padding: 0;
    object-fit: none
@@ -27,6 +28,47 @@ height: 95px;
 }
 
 .big-c {
-   transform: translateY(-100px);
-   opacity: 0.93;
+   transform: translateY(-125px);
+   opacity: 0.83;
 }
+
+.main-c {
+   max-width: 1365px;
+}
+
+.img-thumbnail {
+   height: 180px;
+   width: 320px;
+}  
+
+.video-controls > .row {
+   position: relative;
+   width: 15rem;
+   height: 5rem;
+   margin: 0;
+   bottom: 0;
+}  
+
+button {
+   width: 5rem;
+   padding: 0;
+}
+
+.fa-pause .fa-volume-up .fa-arrows-alt  {
+   font-size: 3rem;
+}
+
+.navbar-brand {
+   margin: 0;
+   padding:  0;
+}
+
+.main-logo {
+   width: 5.8rem;
+   height: 6rem;;
+}
+
+/* .navbar-nav {
+   margin-right: 0;
+   margin-left: 70rem; 
+} */

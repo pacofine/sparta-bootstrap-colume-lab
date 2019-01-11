@@ -22,40 +22,39 @@
     <!-- top page navbar with home and link tabs a dropdown, a searchbar and a logo  -->
     <header>
         <nav class="navbar fixed-top navbar-expand-lg bg-custom">
-            <a class="navbar-brand" href="#">Navbar</a>
+
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.jpg" width="30" height="30" alt="logo" class="main-logo">
+                </a>
+            </nav>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="nav justify-content-end nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                        <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">What We Do</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
     </header>
@@ -64,31 +63,73 @@
 
         <!-- fluid jumbotron -->
         <div class="jumbotron jumbotron-fluid embed-responsive">
-            <video src="videos\volome-vid.mp4"></video>
+            <video src="videos/volume.mp4"></video>
+            <!-- video icons -->
             <div class="video-controls">
-                <div class="row">
-                    <div class="control-1 column-ms-4">pause</div>
-                    <div class="control-2 column-ms-4">volume</div>
-                    <div class="control-3 column-ms-4">full</div>
+                <div class="row float-right">
+                    <button class="column-ms-4" class='btn btn-lg ' style='background-color:transparent;'>
+                        <div style='text-align:center;'><i class="fa fa-pause"></i></div>
+                    </button>
+                    <button class="column-ms-4" class='btn btn-lg ' style='background-color:transparent;'>
+                        <div style='text-align:center;'><i class="fa fa-volume-up"></i></div>
+                    </button>
+                    <button class="column-ms-4" class='btn btn-lg ' style='background-color:transparent;'>
+                        <div style='text-align:center;'><i class="fa fa-arrows-alt"></i></div>
+                    </button>
                 </div>
             </div>
         </div>
         <!-- this is the first main container -->
-        <div class="container secondary-bg fixed-width">
+        <div class="main-c container secondary-bg">
             <div class="row">
                 <div class="big-c col-md-8 main-page-key-content flex-md-row mb-4 shadow-sm h-md-250">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 100%;">
+                        <div class="carcard-body">
+                            <h2 class="card-title">Who Are we</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">Card subtitle</h3>
+                            <p class="card-text">We are a digital software and hardware company who develop our own
+                                bespoke software and hardware platforms allowing us to control every element of the
+                                detailed experience our clients require.</p>
+                            <p class="card-text">We work with the world's largest retailers and brands designing
+                                digital experiences that deliver results for the retailer's in-shopper experience
+                                whilst ensuring a digitally focused customer journey that is compelling to the
+                                customer.</p>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <h2 class="card-title">What We Do</h2>
+                            <ul>
+                                <li>
+                                    <h6>Software Development</h6>
+                                </li>
+                                <li>
+                                    <h6>Content Production & Licensing</h6>
+                                </li>
+                                <li>
+                                    <h6>Hardware Manufacture</h6>
+                                </li>
+                                <li>
+                                    <h6>Planning & Installation</h6>
+                                </li>
+                                <li>
+                                    <h6>Logistics & Warehousing</h6>
+                                </li>
+                                <li>
+                                    <h6>Customer Support</h6>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 main-page-key-content">column 2</div>
+                <div class="col-md-4 main-page-key-content">
+                    <div class="row">
+                        <div class="badge-1 thumb-nail">
+                            <img src="images/award-1.jpg" alt="badge-1" class="img-thumbnail">
+                        </div>
+                        <div class="badge-2">
+                            <img src="images/award-2.png" alt="badge-2" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -145,6 +186,7 @@
             </a>
         </div>
 
+        <!-- this is the second main container -->
         <div class="container secondary-bg fixed-width">
             <div class="row">
                 <div class="col-md-4 main-page-key-content flex-md-row mb-4 shadow-sm h-md-250">column 1
@@ -220,7 +262,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
                         card's content.</p>
                     <a href="#" class="card-link">Card link</a>
                     <a href="#" class="card-link">Another link</a>
